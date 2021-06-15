@@ -1,6 +1,14 @@
-import MainPage from "./Components/MainPage"; 
 
-// this is the first component that will render and calls the MainPage Component
-const App = ()=> (<MainPage />);
+import { useState } from "react"
+import DefPage from './Components/DefPage/defualt'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// see this is my home page and it goes to....
+
+function App() {
+  
+  return (
+    <DefPage/>
+  );
+}
 
 export default App;
