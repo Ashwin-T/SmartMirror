@@ -1,13 +1,12 @@
 import React, {useState,useEffect} from 'react'; 
-const Clock = ()=>{
+import moment from 'moment';
+const Date = ()=>{
 
     // creates a state storing the current time string
-    const [currentTime,setCurrentTime] = useState(Date()); 
+    const [currentDate, setcurrentDate] = useState(moment().format('dddd') +', '+ moment().format('LL')); 
 
-    // setInterval runs a function (first parameter) ever 1000 (second parameter)
-    const interval = setInterval( ()=>setCurrentTime(Date()),1000); 
+    const interval = setInterval(()=> setcurrentDate(moment().format('dddd') +', '+ moment().format('LL')), 10000);
 
-    // the useEffect will run when the component mounts
     useEffect(()=>{
         // returning a function in the useEffect acts as a cleanup function for the component. 
         //If the component were to unmount (be removed from the screen) it will run this function
@@ -16,7 +15,7 @@ const Clock = ()=>{
         }
     },[]); 
 
-    return (<div className = 'date'>{currentTime}</div>); // displays the current time and is updated everytime currentTime is updated
+    return (<div className = 'date'>{currentDate}</div>); // displays the current time and is updated everytime currentTime is updated
 };
 
-export default Clock; 
+export default Date; 

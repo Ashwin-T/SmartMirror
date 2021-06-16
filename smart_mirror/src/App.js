@@ -1,13 +1,15 @@
 
 // see this is my home page and it goes to....
 import './index.css';
-import Clock from './Components/Clock/clock'
+import Date from './Components/Clock/date';
+import Time from './Components/Clock/time';
 
 function App() {
 
   return (
     <div className="App">
-        <Clock/>
+        <Date/>
+        <Time/>
     </div>
   );
 }
