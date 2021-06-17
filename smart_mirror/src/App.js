@@ -1,13 +1,13 @@
 
 // see this is my home page and it goes to....
 import './index.css';
-import Clock from './Components/Clock/clock.jsx';
+import Main from './Components/MainPage/Main';
 
-function App() {
+const App = ()=>{
 
   return (
     <div className="App">
-        <Clock/>
+        <Main/>
     </div>
   );
 }
