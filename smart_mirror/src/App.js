@@ -4,7 +4,6 @@ import './index.css';
 import Main from './Components/MainPage/Main';
 
 const App = ()=>{
-
   return (
     <div className="App">
         <Main/>

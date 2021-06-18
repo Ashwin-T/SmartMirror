@@ -58,16 +58,46 @@ html{
     position: absolute;
     width: 180px;
     height: 50px;
-    left: 220px;
-    top: 725px;
+    left: 275px;
+    top: 620px;
 
     font-family: Times New Roman;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 53px;
     line-height: 75px;
     text-decoration-line: underline;
 
     color: #FFFFFF;
 
+}
+.icon{
+    position: absolute;
+    width: 320px;
+    height: 340px;
+    left: 0px;
+    top: 550px;
+}
+.iconData{
+    position: absolute;
+    width: 520px;
+    height: 85px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    left: 275px;
+    font-size: 35px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+.description{
+    top: 705px;
+}
+.humidity{
+    top: 745px;
+}
+.per{
+    top: 785px;
 }

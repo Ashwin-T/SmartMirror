@@ -14,7 +14,7 @@ const Time = () => {
             clearInterval(interval); // this stops the inteval function above from being run
         }
     },[]); 
-
+    
     return (
         <div className = 'time'>{currentTime}</div>
       );

@@ -3,23 +3,23 @@ import axios from 'axios';
 
 const apiKeys = require('../../env.json');
 
-const Icon = async () =>{
+const MoreWeatherWind = async () =>{
     const path = `https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`;
 
     const d = await axios.get(path);
-    return (d.data.weather[0].icon);
+    return (d.data.wind.speed);
     //`${d.weather.icon}`
 }
 
-const ShowIcon = () => {
+const ShowMoreWeatherWind = () => {
     
     const ApiCall = async() =>{
-        setIcon(await Icon());
+        setMore(await MoreWeatherWind());
     }
 
-    const interval = setInterval(ApiCall,60000);
+    const interval = setInterval(ApiCall,10000);
 
-    const [icon, setIcon] = useState(null);
+    const [more, setMore] = useState(null);
 
     useEffect(()=>{
         ApiCall();
@@ -28,8 +28,8 @@ const ShowIcon = () => {
         }
     },[]); 
     
-    const imgsrc = `https://openweathermap.org/img/wn/${icon}@2x.png`
-    return(<img src = {imgsrc} className = "icon"></img>);
+   
+    return(<div className = "iconData per">wind speed: {more} m/s</div>);
 }
 
-export default ShowIcon;
+export default ShowMoreWeatherWind;

@@ -21,6 +21,7 @@ const ShowTemp = () => {
 
     const ApiCall = async() =>{
         setTemperature(KtoF(await temp()));
+        
     }
 
     const interval = setInterval(ApiCall,1800000);
@@ -34,9 +35,8 @@ const ShowTemp = () => {
         }
     },[]); 
     
-    console.log(temperature);
     
-    return(<div className = "temp">{temperature}</div>);
+    return(<div className = "temp">{temperature} ° F</div>);
 }
 
 export default ShowTemp;
