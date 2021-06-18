@@ -13,21 +13,13 @@ const MoreWeatherWind = async () =>{
 
 const ShowMoreWeatherWind = () => {
     
-    const ApiCall = async() =>{
-        setMore(await MoreWeatherWind());
-    }
+    const ApiCall = async() =>setMore(await MoreWeatherWind());
 
     const interval = setInterval(ApiCall,10000);
 
     const [more, setMore] = useState(null);
 
-    useEffect(()=>{
-        ApiCall();
-        return ()=>{
-            clearInterval(interval); 
-        }
-    },[]); 
-    
+    useEffect(()=>{ApiCall(); return ()=>clearInterval(interval);},[]); 
    
     return(<div className = "iconData per">wind speed: {more} m/s</div>);
 }

@@ -13,21 +13,14 @@ const MoreWeather = async () =>{
 
 const ShowMoreWeather = () => {
     
-    const ApiCall = async() =>{
-        setMore(await MoreWeather());
-    }
+    const ApiCall = async() => setMore(await MoreWeather());
 
     const interval = setInterval(ApiCall,60000);
 
     const [more, setMore] = useState(null);
 
-    useEffect(()=>{
-        ApiCall();
-        return ()=>{
-            clearInterval(interval); 
-        }
-    },[]); 
-    
+    useEffect(()=>{ApiCall(); return ()=>clearInterval(interval);},[]); 
+
    
     return(<div className = "iconData description">{more}</div>);
 }

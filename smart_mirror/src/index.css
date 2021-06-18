@@ -101,3 +101,11 @@ html{
 .per{
     top: 785px;
 }
+.logo{
+    position: absolute;
+    width: 165px;
+    height: 155px;
+    left: 850px;
+    top: 850px;
+
+}

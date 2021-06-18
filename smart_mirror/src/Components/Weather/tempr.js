@@ -13,27 +13,18 @@ const temp = async () =>{
 
 const ShowTemp = () => {
     
-    const KtoF = (k) => {
-        const f = Math.round((((k-273.15)*1.8)+32));
-
-        return(f);
+    const KtoF = k => {
+        const f = Math.round((((k-273.15)*1.8)+32)); 
+        return(f); 
     }
 
-    const ApiCall = async() =>{
-        setTemperature(KtoF(await temp()));
+    const ApiCall = async() =>setTemperature(KtoF(await temp()));
         
-    }
-
     const interval = setInterval(ApiCall,1800000);
 
     const [temperature, setTemperature] = useState(null);
 
-    useEffect(()=>{
-        ApiCall();
-        return ()=>{
-            clearInterval(interval); 
-        }
-    },[]); 
+    useEffect(()=>{ApiCall(); return ()=>clearInterval(interval);},[]); 
     
     
     return(<div className = "temp">{temperature} ° F</div>);

@@ -13,20 +13,13 @@ const MoreWeatherHum = async () =>{
 
 const ShowMoreWeatherHum = () => {
     
-    const ApiCall = async() =>{
-        setMore(await MoreWeatherHum());
-    }
+    const ApiCall = async() => setMore(await MoreWeatherHum());
 
     const interval = setInterval(ApiCall,60000);
 
     const [more, setMore] = useState(null);
 
-    useEffect(()=>{
-        ApiCall();
-        return ()=>{
-            clearInterval(interval); 
-        }
-    },[]); 
+    useEffect(()=>{ApiCall(); return ()=>clearInterval(interval);},[]); 
     
    
     return(<div className = "iconData humidity">humidity: {more}%</div>);
