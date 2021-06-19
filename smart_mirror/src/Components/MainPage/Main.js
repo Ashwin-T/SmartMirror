@@ -7,7 +7,7 @@ import ShowIcon from '../Weather/icon.js';
 import ShowMoreWeather from '../Weather/moreWeather';
 import ShowMoreWeatherHum from '../Weather/humidity';
 import ShowMoreWeatherWind from '../Weather/wind';
-import Logo from './logo';
+// import Logo from './logo';
 
 
 const MainPage = ()=> {
@@ -22,7 +22,7 @@ const MainPage = ()=> {
             <ShowMoreWeather/>
             <ShowMoreWeatherHum/>
             <ShowMoreWeatherWind/>
-            <Logo/>
+            {/* <Logo/> */}
         </div>
     ); 
 }

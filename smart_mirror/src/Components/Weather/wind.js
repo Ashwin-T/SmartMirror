@@ -5,7 +5,6 @@ const apiKeys = require('../../env.json');
 
 const MoreWeatherWind = async () =>{
     const path = `https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`;
-
     const d = await axios.get(path);
     return (d.data.wind.speed);
     //`${d.weather.icon}`
