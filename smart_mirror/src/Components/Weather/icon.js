@@ -17,15 +17,13 @@ const ShowIcon = () => {
         setIcon(await Icon());
     }
 
-    const interval = setInterval(ApiCall,60000);
+    const interval = setInterval(ApiCall,1000);
 
     const [icon, setIcon] = useState(null);
 
     useEffect(()=>{
         ApiCall();
-        return ()=>{
-            clearInterval(interval); 
-        }
+        return ()=>{clearInterval(interval)}
     },[]); 
     
     const imgsrc = `https://openweathermap.org/img/wn/${icon}@2x.png`
