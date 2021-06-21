@@ -1,31 +1,31 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios'; 
-
 const apiKeys = require('../../env.json');
 
-const temp = async () =>{
-    const path = `https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`;
 
-    const d = await axios.get(path);
-    return (d.data.main.temp);
+const KtoF = k => {
+    const f = Math.round((((k-273.15)*1.8)+32)); 
+    return(f); 
+}
+
+const temp = async() =>{
+    const {data: {main: {temp: temp}}} = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`);
+    console.log(temp);
+    return (temp);
 
 }
 
-const ShowTemp = () => {
-    
-    const KtoF = k => {
-        const f = Math.round((((k-273.15)*1.8)+32)); 
-        return(f); 
-    }
+const ShowTemp = (props) => {
+      
+    const ApiCall = async() => setTemperature(await temp());
 
-    const ApiCall = async() =>setTemperature(KtoF(await temp()));
-        
-    const interval = setInterval(ApiCall,1800000);
+    const interval = setInterval(ApiCall,60000);
 
     const [temperature, setTemperature] = useState(null);
 
     useEffect(()=>{ApiCall(); return ()=>clearInterval(interval);},[]); 
-    
+
+
     
     return(<div className = "temp">{temperature} ° F</div>);
 }

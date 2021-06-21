@@ -4,11 +4,8 @@ import axios from 'axios';
 const apiKeys = require('../../env.json');
 
 const MoreWeather = async () =>{
-    const path = `https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`;
-
-    const d = await axios.get(path);
-    return (d.data.weather[0].description);
-    //`${d.weather.icon}`
+    const {data : {weather: [{description: des}]}} = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`);
+    return (des);
 }
 
 const ShowMoreWeather = () => {
