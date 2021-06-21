@@ -17,7 +17,7 @@ const temp = async() =>{
 
 const ShowTemp = (props) => {
       
-    const ApiCall = async() => setTemperature(await temp());
+    const ApiCall = async() => setTemperature(KtoF(await temp()));
 
     const interval = setInterval(ApiCall,60000);
 
