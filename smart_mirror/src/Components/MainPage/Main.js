@@ -11,7 +11,7 @@ const MainPage = ()=> {
         <div>
             <DateAndTimeMain/>
             <WeatherMain/> 
-                      {/* <Logo/> */}
+            {/* <Logo/> */}
         </div>
     ); 
 }

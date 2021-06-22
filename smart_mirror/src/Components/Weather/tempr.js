@@ -6,6 +6,6 @@ const KtoF = k => {
 const ShowTemp = ({path: {data: {main: {temp: t}}}}) => {
       
     return(<div className = "temp">{KtoF(t)} ° F</div>);
-}
+    }
 
 export default ShowTemp;
