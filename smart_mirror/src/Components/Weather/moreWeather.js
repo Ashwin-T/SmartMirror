@@ -3,23 +3,14 @@ import axios from 'axios';
 
 const apiKeys = require('../../env.json');
 
-const MoreWeather = async () =>{
-    const {data : {weather: [{description: des}]}} = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`);
-    return (des);
-}
+// const MoreWeather = async () =>{
+//     const {data : {weather: [{description: des}]}} = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`);
+//     return (des);
+// }
 
-const ShowMoreWeather = () => {
+const ShowMoreWeather = ({path: {data : {weather: [{description: des}]}}}) => {
     
-    const ApiCall = async() => setMore(await MoreWeather());
-
-    const interval = setInterval(ApiCall,60000);
-
-    const [more, setMore] = useState(null);
-
-    useEffect(()=>{ApiCall(); return ()=>clearInterval(interval);},[]); 
-
-   
-    return(<div className = "iconData description">{more}</div>);
+    return(<div className = "iconData description">{des}</div>);
 }
 
 export default ShowMoreWeather;

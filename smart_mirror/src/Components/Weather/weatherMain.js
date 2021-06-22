@@ -4,37 +4,36 @@ import ShowMoreWeather from './moreWeather';
 import ShowMoreWeatherHum from './humidity';
 import ShowMoreWeatherWind from './wind';
 
-
 import axios from 'axios'; 
 import {useState, useEffect} from 'react';
 
 
 const WeatherMain = () => {
-    // const apiKeys = require('../../env.json');
+    const apiKeys = require('../../env.json');
 
-    // const getAxios = async() =>{
-    //     return(git stash pop`));
-    // }
+    const getAxios = async() =>{
+        return(axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`));
+    }
 
-    // const [p, setP] =  useState({});
+    const [path, setPath] =  useState({data: {weather: [{icon: '10d'}], main: {temp: 69, humidity: 69}}}); //dummy values
 
-    // const ApiCall = async() =>setP(await getAxios);
+    const ApiCall = async() =>setPath(await getAxios());
         
-    // const interval = setInterval(ApiCall,10000);
+    const interval = setInterval(ApiCall,30000);
 
-    // useEffect(()=>{
-    //     ApiCall(); 
-    //     return ()=>clearInterval(interval);
-    // },[]); 
+    useEffect(()=>{
+        ApiCall(); 
+        return ()=>clearInterval(interval);
+    },[]); 
     
 
     return (
         <div>
-            <ShowTemp/>
-            <ShowIcon/>
-            <ShowMoreWeather/>
-            <ShowMoreWeatherHum/>
-            <ShowMoreWeatherWind/>
+            <ShowTemp path = {path}/>
+            <ShowIcon path = {path}/>
+            <ShowMoreWeather path = {path}/>
+            <ShowMoreWeatherHum path = {path}/>
+            <ShowMoreWeatherWind path = {path}/>
         </div>
       );
 }
