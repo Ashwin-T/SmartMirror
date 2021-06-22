@@ -1,3 +1,3 @@
-const ShowMoreWeather = ({path: {data : {weather: [{description: des}]}}}) => {return(<div className = "iconData description">{des}</div>);}
+const ShowMoreWeather = ({path: {data : {weather: [{description: des}]}}}) => (<div className = "iconData description">{des}</div>)
 
 export default ShowMoreWeather;

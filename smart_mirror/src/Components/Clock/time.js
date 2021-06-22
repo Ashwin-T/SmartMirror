@@ -7,8 +7,8 @@ const Time = () => {
     
     const interval = setInterval(()=> setcurrentTime(moment().format('LTS'),1000));
 
-    useEffect(()=>{return ()=>{clearInterval(interval);}},[]); 
-    
+    useEffect(()=>(()=>{clearInterval(interval)}),[]); 
+
     return (
         <div className = 'time'>{currentTime}</div>
       );
