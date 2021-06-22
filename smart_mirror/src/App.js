@@ -1,15 +1,12 @@
 
 // see this is my home page and it goes to....
 import './index.css';
-import Date from './Components/Clock/date';
-import Time from './Components/Clock/time';
+import Main from './Components/MainPage/Main';
 
-function App() {
-
+const App = ()=>{
   return (
     <div className="App">
-        <Date/>
-        <Time/>
+        <Main/>
     </div>
   );
 }

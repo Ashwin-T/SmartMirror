@@ -4,38 +4,125 @@ html{
     background-color: black;
 }
 .date{
-position: absolute;
-width: 700px;
-height: 55px;
-left: 75px;
-top: 130px;
+    position: absolute;
+    width: 1000px;
+    height: 55px;
+    left: 35px;
+    top: 130px;
 
-font-family: Times New Roman;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 57px;
-text-align: center;
-text-decoration-line: underline;
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 75px;
+    line-height: 57px;
+    text-align: center;
+    text-decoration-line: underline;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .time{
-position: absolute;
-width: 140px;
-height: 29px;
-left: 125px;
-top: 215px;
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    left: 215px;
+    top: 250px;
 
-font-family: Times New Roman;
-font-style: normal;
-font-weight: normal;
-font-size: 25px;
-line-height: 29px;
-/* identical to box height */
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 30px;
+    /* identical to box height */
 
 
-color: #FFFFFF;
+    color: #FFFFFF;
+}
+.location{
+    position: absolute;
+    width: 400px;
+    height: 30px;
+    left: 480px;
+    top: 250px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+.temp{
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    left: 300px;
+    top: 620px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 53px;
+    line-height: 75px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+
+}
+.icon{
+    position: absolute;
+    width: 320px;
+    height: 340px;
+    left: 0px;
+    top: 550px;
+}
+.iconData{
+    position: absolute;
+    width: 520px;
+    height: 85px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    left: 300px;
+    font-size: 35px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+}
+.description{
+    top: 705px;
+}
+.humidity{
+    top: 745px;
+}
+.per{
+    top: 785px;
+}
+.logo{
+    position: absolute;
+    width: 165px;
+    height: 155px;
+    left: 850px;
+    top: 850px;
+
+}
+.quote{
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 4px;
+    top: 420px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 85px;
+    text-align: center;
+
+    color: #FFFFFF;
+
 }
