@@ -5,7 +5,7 @@
 2. run ```npm install``` to install the dependencies.
 
 # Development
-1. run ```npm run dev``` to start the application in development mode.
+1. run ```npm run dev``` to start the application in development mode on a Raspberry Pi, locally use ```npm start```.
 2. edit the ```App.js``` file located in the ```src``` folder as well as add whichever components you would like to the components folder to modify the application. 
 
 # Building for final Version
