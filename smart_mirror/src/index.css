@@ -59,7 +59,7 @@ html{
     width: 180px;
     height: 50px;
     left: 300px;
-    top: 620px;
+    top: 670px;
 
     font-family: Times New Roman;
     font-style: normal;
@@ -76,7 +76,7 @@ html{
     width: 320px;
     height: 340px;
     left: 0px;
-    top: 550px;
+    top: 625px;
 }
 .iconData{
     position: absolute;
@@ -93,13 +93,13 @@ html{
     color: #FFFFFF;
 }
 .description{
-    top: 705px;
+    top: 755px;
 }
 .humidity{
-    top: 745px;
+    top: 795px;
 }
 .per{
-    top: 785px;
+    top: 835px;
 }
 .logo{
     position: absolute;
@@ -130,13 +130,13 @@ html{
     position: absolute;
     width: 385px;
     height: 100px;
-    left: 1075px;
-    top: 550px;
+    left: 1300px;
+    top: 500px;
 
     font-family: Times New Roman;
     font-style: normal;
     font-weight: normal;
-    font-size: 45px;
+    font-size: 50px;
     line-height: 75px;
     text-align: center;
 
