@@ -126,3 +126,19 @@ html{
     color: #FFFFFF;
 
 }
+.quoteAuthor{
+    position: absolute;
+    width: 385px;
+    height: 100px;
+    left: 1075px;
+    top: 550px;
+
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 75px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
