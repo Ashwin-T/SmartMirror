@@ -1,6 +1,8 @@
+import logo from './Main.PNG';
+
 const Logo = () => {
     return (  
-        <img className = 'logo' src = {require('./Main.PNG')}></img>
+        <img className = 'logo' src = {logo}></img>
     );
 }
  

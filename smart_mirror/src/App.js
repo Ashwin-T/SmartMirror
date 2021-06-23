@@ -1,12 +1,12 @@
 
 // see this is my home page and it goes to....
 import './index.css';
-import Main from './Components/MainPage/Main';
+import MainPageOne from './Components/MainPage/Main1';
 
 const App = ()=>{
   return (
     <div className="App">
-        <Main/>
+        <MainPageOne/>
     </div>
   );
 }
