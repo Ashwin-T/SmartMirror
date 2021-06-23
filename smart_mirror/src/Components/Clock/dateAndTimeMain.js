@@ -5,9 +5,9 @@ import Location from './location';
 const DateAndTimeMain = () => {
     return (  
         <div>
-            <Date/>
-            <Time/>
-            <Location/>
+            <Date stylz = 'date'/>
+            <Time stylz = 'time'/>
+            <Location stylz = 'location'/>
         </div>
     );
 }

@@ -13,7 +13,7 @@ const MainPageOne = ()=> {
             <DateAndTimeMain/>
             <WeatherMain/> 
             <QuoteMain/>
-            <Logo/>
+            <Logo stylz = 'logo'/>
         </div>
     ); 
 }

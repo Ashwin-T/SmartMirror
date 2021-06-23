@@ -1,8 +1,8 @@
 import logo from './Main.PNG';
 
-const Logo = () => {
+const Logo = ({stylz}) => {
     return (  
-        <img className = 'logo' src = {logo}></img>
+        <img className = {stylz} src = {logo}></img>
     );
 }
  

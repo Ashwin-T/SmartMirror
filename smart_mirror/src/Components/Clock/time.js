@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'; 
 import moment from 'moment';
 
-const Time = () => {
+const Time = ({stylz}) => {
 
     const [currentTime, setcurrentTime] = useState();
     
@@ -10,7 +10,7 @@ const Time = () => {
     useEffect(()=>(()=>{clearInterval(interval)}),[]); 
 
     return (
-        <div className = 'time'>{currentTime}</div>
+        <div className = {stylz}>{currentTime}</div>
       );
 }
  

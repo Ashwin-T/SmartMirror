@@ -10,10 +10,10 @@ const HomePage = () => {
     
     return (  
         <div>
-            <Date/>
-            <Time/>
-            <Location/>
-            <Logo/>
+            <Date stylz = 'dateHome'/>
+            <Time stylz = 'timeHome'/>
+            <Location stylz = 'locationHome'/>
+            <Logo stylz = 'logoHome'/>
         </div>
     );
 }
