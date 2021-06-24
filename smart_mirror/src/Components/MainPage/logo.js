@@ -1,7 +1,5 @@
-const Logo = () => {
-    return (  
-        <img className = 'logo' src = {require('./Main.PNG')}></img>
-    );
-}
- 
+import logo from './Main.PNG';
+
+const Logo = ({stylz}) => (<img className = {stylz} src = {logo}></img>)
+
 export default Logo;

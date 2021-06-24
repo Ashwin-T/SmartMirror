@@ -1,8 +1,8 @@
 import React, {useState} from 'react'; 
-const Location = ()=>{
+const Location = ({stylz})=>{
 
     const [location, setLocation] = useState('Seattle, Washington'); 
 
-    return (<div className = 'location'>{location}</div>); 
+    return (<div className = {stylz}>{location}</div>); 
 }
 export default Location; 
