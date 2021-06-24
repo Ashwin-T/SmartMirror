@@ -2,6 +2,7 @@
 html{
     color: white;
     background-color: black;
+    overflow: hidden;
 }
 .date{
     position: absolute;
@@ -59,7 +60,7 @@ html{
     width: 180px;
     height: 50px;
     left: 300px;
-    top: 670px;
+    top: 835px;
  
     font-family: Times New Roman;
     font-style: normal;
@@ -76,7 +77,7 @@ html{
     width: 320px;
     height: 340px;
     left: 0px;
-    top: 625px;
+    top: 775px;
 }
 .iconData{
     position: absolute;
@@ -93,20 +94,20 @@ html{
     color: #FFFFFF;
 }
 .description{
-    top: 755px;
+    top: 920px;
 }
 .humidity{
-    top: 795px;
+    top: 960px;
 }
 .per{
-    top: 835px;
+    top: 1000px;
 }
 .logo{
     position: absolute;
     width: 165px;
     height: 155px;
-    left: 1740px;
-    top: 850px;
+    left: 1750px;
+    top: 920px;
  
 }
 .quote{
@@ -114,12 +115,12 @@ html{
     width: 100%;
     height: 85px;
     left: 4px;
-    top: 420px;
+    top: 500px;
  
     font-family: Times New Roman;
     font-style: normal;
     font-weight: normal;
-    font-size: 55px;
+    font-size: 40px;
     line-height: 85px;
     text-align: center;
  
@@ -130,8 +131,8 @@ html{
     position: absolute;
     width: 385px;
     height: 100px;
-    left: 1300px;
-    top: 500px;
+    left: 1350px;
+    top: 575px;
  
     font-family: Times New Roman;
     font-style: normal;
@@ -144,17 +145,17 @@ html{
 }
 .logoHome{
     position: absolute;
-    width: 960px;
-    height: 940px;
-    left: 480px;
-    top: 45px;
+    width: 1000px;
+    height: 1000px;
+    left: 475px;
+    top: 50px;
 }
 .locationHome{
     position: absolute;
     width: 200px;
     height: 30px;
     left: 235px;
-    top: 910px;
+    top: 1000px;
 
     font-family: Times New Roman;
     font-style: normal;
@@ -167,15 +168,15 @@ html{
 }
 .timeHome{
     position: absolute;
-    width: 140px;
+    width: 250px;
     height: 30px;
-    left: 75px;
-    top: 910px;
+    left: 50px;
+    top: 1000px;
  
     font-family: Times New Roman;
     font-style: normal;
     font-weight: normal;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 30px;
     /* identical to box height */
  
@@ -184,15 +185,15 @@ html{
 }
 .dateHome{
     position: absolute;
-    width: 500px;
+    width: 700px;
     height: 55px;
-    left: 1400px;
+    left: 1275px;
     top: 65px;
  
     font-family: Times New Roman;
     font-style: normal;
     font-weight: normal;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 60px;
     text-align: center;
     text-decoration-line: underline;

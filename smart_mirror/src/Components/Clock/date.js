@@ -7,7 +7,7 @@ const Date = ({stylz})=>{
 
     const interval = setInterval(()=> setcurrentDate(moment().format('dddd') +' '+ moment().format('LL')), 10000);
 
-    useEffect(()=>{return ()=>{clearInterval(interval);}},[]); 
+    useEffect(()=>(()=>{clearInterval(interval);}),[]); 
 
     return (<div className = {stylz}>{currentDate}</div>); // displays the current time and is updated everytime currentTime is updated
 };

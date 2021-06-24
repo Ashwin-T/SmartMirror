@@ -7,8 +7,8 @@ import HomePage from './Components/MainPage/homePage'
 const App = ()=>{
   return (
     <div className="App">
-        <MainPageOne/>
-        {/* <HomePage/> */}
+        {/* <MainPageOne/> */}
+        <HomePage/>
     </div>
   );
 }
