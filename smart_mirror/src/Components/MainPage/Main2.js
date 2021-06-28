@@ -7,6 +7,7 @@ import Logo from './logo';
 
 
 const MainPageTwo = ()=> {
+
     
     return(
         <div>
