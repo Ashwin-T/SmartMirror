@@ -24,7 +24,18 @@ const QuoteMain = () => {
     },[]);
     
     
-    return (<><div className = 'quote'>"{dailyQuote.q}"</div><div className = 'quoteAuthor'>- {dailyQuote.a}</div></>);
+    return (
+        <>
+            <div className = 'quote'>
+                "{dailyQuote.q}"
+                <div className = 'quoteAuthor'>
+                    - {dailyQuote.a}
+                </div>
+            </div>
+
+            
+        </>
+    );
 }
  
 export default QuoteMain;

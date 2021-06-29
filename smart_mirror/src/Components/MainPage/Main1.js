@@ -3,20 +3,27 @@ import React from 'react';
 import DateAndTimeMain from '../Clock/dateAndTimeMain.js';
 import Greeting from '../Greeting/greeting.js'
 import Logo from './logo';
-// import Login from '../Spotify/Login.js';
-import { useHistory } from "react-router-dom";
-
+import TodoList from '../TodoList/Todo'
 
 const MainPageOne = ()=> {
 
 
     return(
-        <div>
-            <DateAndTimeMain/>
-            <Logo stylz = 'logo2'/>
+        <>
+            <div className = 'flex wrap1'>
+                <Logo stylz = 'logo2'/>
+            </div>
+
+            <div className = 'flex'>
+                <DateAndTimeMain/>
+            </div>
+
             <Greeting/>
-            {/* <Login/> */}
-        </div>
+
+            <div className = 'flex'>
+                <TodoList/>
+            </div>
+        </>
     ); 
 }
 

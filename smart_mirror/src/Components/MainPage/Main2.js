@@ -10,12 +10,21 @@ const MainPageTwo = ()=> {
 
     
     return(
-        <div>
-            <DateAndTimeMain/>
-            <WeatherMain/> 
-            <QuoteMain/>
-            <Logo stylz = 'logo'/>
-        </div>
+        <>  
+            <div className = 'flex wrap1'>
+                <Logo stylz = 'logo'/>
+            </div>  
+
+            <div className = 'flex'>
+                <DateAndTimeMain/>
+            </div>
+            
+            
+            <div className = 'flex wrap3'>
+                <WeatherMain/> 
+                <QuoteMain/>
+            </div>
+        </>
     ); 
 }
 

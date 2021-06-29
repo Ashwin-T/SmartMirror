@@ -4,10 +4,12 @@ import Location from './location';
 
 const DateAndTimeMain = () => {
     return (  
-        <div>
+        <div className = 'flex column'>  
             <Date stylz = 'date'/>
-            <Time stylz = 'time'/>
-            <Location stylz = 'location'/>
+            <div className = 'flex pad'>
+                <Time stylz = 'time'/>
+                <Location stylz = 'location'/>
+            </div>
         </div>
     );
 }
