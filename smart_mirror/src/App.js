@@ -19,18 +19,20 @@ const App = ()=>{
   
     let history = useHistory();
     const db = firebase.firestore(); 
-    const [data, setData] = useState(0);
+    //const [data, setData] = useState(0);
     
     useEffect(
       ()=>{
+        let hasRun = false;
         db.collection('Page').doc('PageNum')
         .onSnapshot((doc) => {
-          history.push(`/${doc.data().Page}`);
-                    //   history.go(0);
-
-          setData(doc.data().Page);
+          if (hasRun == true){
+            history.push(`/${doc.data().Page}`);
+            history.go(0);
+          }
+          hasRun = true;
       });
-      }, [data])
+      }, [])
     
 
   return (
