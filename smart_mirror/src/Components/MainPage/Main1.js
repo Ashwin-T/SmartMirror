@@ -1,20 +1,29 @@
+
 import React from 'react';
-
 import DateAndTimeMain from '../Clock/dateAndTimeMain.js';
-import WeatherMain from '../Weather/weatherMain.js';
-import QuoteMain from '../DailyQuote/quoteMain.js';
+import Greeting from '../Greeting/greeting.js'
 import Logo from './logo';
-
+import TodoList from '../TodoList/Todo'
 
 const MainPageOne = ()=> {
-    
+
+
     return(
-        <div>
-            <DateAndTimeMain/>
-            <WeatherMain/> 
-            <QuoteMain/>
-            <Logo stylz = 'logo'/>
-        </div>
+        <>
+            <div className = 'flex wrap1'>
+                <Logo stylz = 'logo2'/>
+            </div>
+
+            <div className = 'flex'>
+                <DateAndTimeMain/>
+            </div>
+
+            <Greeting/>
+
+            <div className = 'flex'>
+                <TodoList/>
+            </div>
+        </>
     ); 
 }
 
