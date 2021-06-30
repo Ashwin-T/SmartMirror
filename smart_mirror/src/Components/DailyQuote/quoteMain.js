@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const QuoteMain = () => {
     const getQuote = async() =>{
-        const {data} = await axios.get('http://10.0.0.239:8080/quote'); //fix this later
+        const {data} = await axios.get('http://localhost:8080/quote'); //fix this later
         return(data);
     }
     const apiCall = async()=> setdailyQuote(await getQuote());
