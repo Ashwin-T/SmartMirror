@@ -4,7 +4,7 @@ import MainPageOne from './Components/MainPage/Main1';
 import HomePage from './Components/MainPage/homePage';
 import MainPageTwo from './Components/MainPage/Main2';
 import firebase from './firebase.js';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, useHistory} from "react-router-dom";
 
 const AppWrapper = () => {
@@ -19,7 +19,6 @@ const App = ()=>{
   
     let history = useHistory();
     const db = firebase.firestore(); 
-    //const [data, setData] = useState(0);
     
     useEffect(
       ()=>{

@@ -10,6 +10,7 @@ app.use(express.static(__dirname + '/build'));
 app.get('/', (req, res)=> {
   res.sendFile(__dirname + '/build/index.html');
 })
+<<<<<<< HEAD
 app.get('/0', (req, res)=> {
     res.sendFile(__dirname + '/build/index.html');
 })
@@ -23,6 +24,9 @@ app.get('/3', (req, res)=> {
     res.sendFile(__dirname + '/build/index.html');
 })
  
+=======
+
+>>>>>>> b59bcf65f4757b89410ba90d67818dfc18ba6516
 app.get('/quote', function (req, res) {
   
     (async()=> {
