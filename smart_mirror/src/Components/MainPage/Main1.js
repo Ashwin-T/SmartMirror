@@ -7,7 +7,6 @@ import TodoList from '../TodoList/Todo'
 
 const MainPageOne = ()=> {
 
-
     return(
         <>
             <div className = 'flex wrap1'>
