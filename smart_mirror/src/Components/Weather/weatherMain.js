@@ -11,7 +11,7 @@ import {useState, useEffect} from 'react';
 const WeatherMain = () => {
     
     const apiKeys = require('../../env.json');  
-    const getAxios = async() => (axios.get(`https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=${apiKeys.weatherApi}`))
+    const getAxios = async() => (axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=94040,us&appid=${apiKeys.weatherApi}`))
 
     const [path, setPath] =  useState({data: {weather: [{icon: '01d'}], main: {temp: 310, humidity: 69}, wind: {speed: 6.429}}}); //dummy values
 
